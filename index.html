@@ -10,8 +10,8 @@
 <body>
     <p>piss</p>
     <header class="container-fluid">
-        <div>
-            <nav class="row" role="tablist">
+        <div class="row">
+            <nav role="tablist">
                 <div class="btn-toolbar">
                     <div class="btn-group" role="group" aria-label="Third group">
                         <button type="button" class="btn" id="logo-text">Floral Tattoo</button>
@@ -19,17 +19,38 @@
                     <div id="icon-holder">
                     </div>
                     <div class="btn-group">
-                        <button type="button" class="nav-pill" role="tab" id="bandcamp"> Bandcamp </button>
-                        <button type="button" class="nav-pill" role="tab" id="calendar"> Upcoming Shows</button>
-                        <button type="button" class="nav-pill" role="tab" id="contact"> Say hello </button>
-                        <button type="button" class="nav-pill" role="tab" id="about"> Who are we? </button>
-                    </div>
-                    <div class="align-self-center">
-                        04:20
+                        <button type="button" class="nav-pill" role="tab" id="bandcamp" data-toggle="modal" data-target="#bandcamp-modal" data-backdrop="false"> Bandcamp </button>
+                        <button type="button" class="nav-pill" role="tab" id="calendar" data-toggle="modal" data-target="#calendar-modal" data-backdrop="false"> Upcoming Shows</button>
+                        <button type="button" class="nav-pill" role="tab" id="contact" data-toggle="modal" data-target="#contact-modal" data-backdrop="false"> Say hello </button>
+                        <button type="button" class="nav-pill" role="tab" id="about" data-toggle="modal" data-target="#about-modal" data-backdrop="false"> Who are we? </button>
                     </div>
                 </div>
             </nav>
+
+        <div class="align-self-center offset-lg-5" id = "endcap">
+            04:20
+        </div>
         </div>
     </header>
+
+
+    <!-- Modal -->
+    <div class="modal" id="bandcamp-modal" tabindex="-1" role="dialog" aria-labelledby="bandcampModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="bandcampModalLabel">welcome to bandcamp</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+                <div class="toolbar">
+
+                </div>
+                <iframe style="border: 0; width: 350px; height: 786px;" src="https://bandcamp.com/EmbeddedPlayer/album=3842221575/size=large/bgcol=333333/linkcol=fe7eaf/transparent=true/" seamless><a href="http://floraltattoo.bandcamp.com/album/you-can-never-have-a-long-enough-head-start">You Can Never Have a Long Enough Head Start by Floral Tattoo</a></iframe>            </div>
+        </div>
+        </div>
+    </div>
 
 </body>

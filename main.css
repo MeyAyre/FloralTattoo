@@ -1,4 +1,9 @@
 
+
+header{
+    color: #EEEEEE;
+    text-shadow: 1px 1px #322B2B;
+}
 #logo-text{
     font-family: 'Roboto', sans-serif;
     color: #EEEEEE;
@@ -32,6 +37,12 @@ nav{
 }
 #icon-holder{
     width: 8em;
+}
+#endcap{
+    background-color: #1290E8;
+    border-radius: 2.5px;
+    padding: 2px;
+    width: 6em;
 }
 
 /* Mobile */
