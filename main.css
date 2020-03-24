@@ -1,0 +1,43 @@
+
+#logo-text{
+    font-family: 'Roboto', sans-serif;
+    color: #EEEEEE;
+    font-weight: bold;
+    font-style: italic;
+    background-image: linear-gradient( #44A442, #266426);
+    text-shadow: 1px 1px #322B2B;
+}
+body{
+    /* background-image: url(windows_xp_background.jpg); */
+}
+header{
+    background-color: #307BE5;
+    margin: auto;
+    bottom: 0 !important;
+    position: fixed;
+    width: 100%;
+    width: 100vw;
+}
+nav{
+    background-color: #1A50B8;
+}
+.nav-pill{
+    color: #EEEEEE;
+    font-family: 'Open Sans', sans-serif;
+    text-shadow: 1px 1px #322B2B;
+    width: 10em;
+    background-color: #4982EC;
+    border: #322B2B thin solid;
+    border-radius: 2.5px;
+}
+#icon-holder{
+    width: 8em;
+}
+
+/* Mobile */
+
+@media screen and (max-width: 1000px){
+    p{
+        font-size: 5em !important;
+    }
+}
