@@ -44,7 +44,57 @@ nav{
     padding: 2px;
     width: 6em;
 }
+.close{
+    color: #EEEEEE;
+    line-height: 0 !important;
+    opacity: 100;
+    background-image: linear-gradient(#D15734,#B2472A) !important;
+    text-shadow: none;
+    border: thin #EEEEEE solid !important;
+    border-radius: 6px !important;
+    width: 25px;
+    font-size: 2rem;
+    font-weight: normal;
+    padding: 0.80rem !important;
+}
+span{
+    margin-left: -0.25em;
+}
+.toolbar{
+    background-color: #F0F0E8;
+    width: 100%;
+    margin: auto 0;
+    height: 20px;
+    font-size: 12px;
+}
+.toolbar-spacer{
+    margin-left: 2em;
+}
 
+.modal-content{
+    border-radius: 0;
+    width: 44rem;
+    border: solid thin #0055E4;
+}
+.modal-header{
+    color: #EEEEEE;
+    text-shadow: 1px 1px #322B2B;
+    background-color: #0055E4 !important;
+    height: 1em;
+    line-height: 2;
+    border-radius: 0;
+}
+
+.modal-title{
+    font-size: 14px !important;
+    margin-bottom: 10em; 
+    line-height: 0 !important;
+}
+
+
+#bandcamp-iframe{
+    padding: 0;
+}
 /* Mobile */
 
 @media screen and (max-width: 1000px){

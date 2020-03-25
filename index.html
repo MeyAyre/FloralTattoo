@@ -36,7 +36,7 @@
 
     <!-- Modal -->
     <div class="modal" id="bandcamp-modal" tabindex="-1" role="dialog" aria-labelledby="bandcampModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
+        <div class="modal-dialog .modal-dialog-scrollable" role="document">
         <div class="modal-content">
             <div class="modal-header">
             <h5 class="modal-title" id="bandcampModalLabel">welcome to bandcamp</h5>
@@ -44,13 +44,16 @@
                 <span aria-hidden="true">&times;</span>
             </button>
             </div>
-            <div class="modal-body">
-                <div class="toolbar">
-
+            <div class="modal-body" id="bandcamp-iframe">
+                <div class="toolbar row">
+                    <p class="toolbar-spacer">File</p>
+                    <p class="toolbar-spacer">Edit</p>
+                    <p class="toolbar-spacer">View</p>
+                    <p class="toolbar-spacer">Favorites</p>
+                    <p class="toolbar-spacer">Tools</p>
+                    <p class="toolbar-spacer">Help</p>
                 </div>
-                <iframe style="border: 0; width: 350px; height: 786px;" src="https://bandcamp.com/EmbeddedPlayer/album=3842221575/size=large/bgcol=333333/linkcol=fe7eaf/transparent=true/" seamless><a href="http://floraltattoo.bandcamp.com/album/you-can-never-have-a-long-enough-head-start">You Can Never Have a Long Enough Head Start by Floral Tattoo</a></iframe>            </div>
-        </div>
-        </div>
+                <iframe style="border: 0; width: 700px; height: 472px;" src="https://bandcamp.com/EmbeddedPlayer/album=3842221575/size=large/bgcol=ffffff/linkcol=f171a2/artwork=small/transparent=true/" seamless><a href="http://floraltattoo.bandcamp.com/album/you-can-never-have-a-long-enough-head-start">You Can Never Have a Long Enough Head Start by Floral Tattoo</a></iframe>        </div>
     </div>
 
 </body>
