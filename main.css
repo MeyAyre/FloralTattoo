@@ -58,6 +58,8 @@ nav{
     font-size: 2rem;
     font-weight: normal;
     padding: 0.80rem !important;
+    padding-right: 1rem !important;
+    padding-bottom: 1rem !important;
 }
 span{
     margin-left: -0.25em;
@@ -130,7 +132,7 @@ span{
         width: 100%;
     }
     .modal-header{
-        height: 2rem;
+        height: 2.5rem;
     }
     .modal-title{
         font-size: 1rem !important;
@@ -142,7 +144,8 @@ span{
     }
     .close{
         padding: 1rem !important;
-        margin-left: -5px;
         font-size: 2em;
+        padding-right: 1.15rem !important;
+        padding-bottom: 1.15rem !important;
     }
 }
