@@ -133,4 +133,10 @@ span{
         font-size: 0.75rem;
         height: 35px;
     }
+    .close{
+        width: 10%;
+        padding: 1.27rem !important;
+        margin-left: -5px;
+        font-size: 3em;
+    }
 }
