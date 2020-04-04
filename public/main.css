@@ -109,6 +109,13 @@ span{
 #bandcamp-iframe{
     width: 100%;
 }
+#album-image{
+    width: 100%;
+    height: 100%;
+}
+#bandcamp-vlc-player{
+    width: 100%;
+}
 
 @media screen and (max-width: 970px){
 

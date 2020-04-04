@@ -14,7 +14,7 @@
     <header class="container-fluid">
         <div class="row">
             <nav role="tablist">
-                    <div class="btn-group" role="group" aria-label="Third group">
+                    <div class="btn-group" role="group" aria-label="Main button group">
                         <button type="button" class="btn" id="logo-text">Floral Tattoo</button>
                     </div>
                     <div id="icon-holder">
@@ -38,7 +38,7 @@
     <!-- Bandcamp Modal -->
     <div class="modal" id="bandcamp-modal" tabindex="-1" role="dialog" aria-labelledby="bandcampModalLabel" aria-hidden="true">
         <div class="modal-dialog .modal-dialog-scrollable" role="document">
-        <div class="modal-content">
+        <div class="modal-content" id="bandcamp-vlc-player">
             <div class="modal-header">
             <h5 class="modal-title" id="bandcampModalLabel">welcome to bandcamp</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -47,14 +47,20 @@
             </div>
             <div class="modal-body">
                 <div class="toolbar row" role="presentation">
-                    <p class="toolbar-spacer">File</p>
-                    <p class="toolbar-spacer">Edit</p>
-                    <p class="toolbar-spacer">View</p>
-                    <p class="toolbar-spacer">Favorites</p>
+                    <p class="toolbar-spacer">Media</p>
+                    <p class="toolbar-spacer">Playback</p>
+                    <p class="toolbar-spacer">Audio</p>
+                    <p class="toolbar-spacer">Video</p>
+                    <p class="toolbar-spacer">Subtitle</p>
                     <p class="toolbar-spacer">Tools</p>
+                    <p class="toolbar-spacer">View</p>
                     <p class="toolbar-spacer">Help</p>
                 </div>
-                <iframe id="bandcamp-iframe" style="border: 0; height: 472px;" src="https://bandcamp.com/EmbeddedPlayer/album=3842221575/size=large/bgcol=333333/linkcol=fe7eaf/artwork=small/transparent=true/" seamless><a href="http://floraltattoo.bandcamp.com/album/you-can-never-have-a-long-enough-head-start">You Can Never Have a Long Enough Head Start by Floral Tattoo</a></iframe>            </div>
+                <div>
+                    <img id="album-image" src="public/images/album_art.jpg" alt="You Can Never Get a Long Enough Headstart album cover" />
+                    <iframe id="bandcamp-iframe" style="border: 0; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=3842221575/size=large/bgcol=333333/linkcol=fe7eaf/tracklist=false/artwork=none/transparent=true/" seamless><a href="http://floraltattoo.bandcamp.com/album/you-can-never-have-a-long-enough-head-start">You Can Never Have a Long Enough Head Start by Floral Tattoo</a></iframe>         
+                </div>
+            </div>
         </div>
         </div>
     </div>
