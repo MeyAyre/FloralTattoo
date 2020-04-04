@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
@@ -12,7 +13,6 @@
     <header class="container-fluid">
         <div class="row">
             <nav role="tablist">
-                <div class="btn-toolbar">
                     <div class="btn-group" role="group" aria-label="Third group">
                         <button type="button" class="btn" id="logo-text">Floral Tattoo</button>
                     </div>
@@ -24,12 +24,12 @@
                         <button type="button" class="nav-pill" role="tab" id="contact" data-toggle="modal" data-target="#contact-modal" data-backdrop="false"> Say hello </button>
                         <button type="button" class="nav-pill" role="tab" id="about" data-toggle="modal" data-target="#about-modal" data-backdrop="false"> Who are we? </button>
                     </div>
-                </div>
+                
             </nav>
 
-        <div class="align-self-center offset-lg-5 btn-group" role="group">
-            <button type="button" class="btn" id="endcap">04:20</button>
-        </div>
+            <div id="time" class="align-self-center ml-md-auto btn-group" role="group">
+                <button type="button" class="btn" id="endcap">04:20</button>
+            </div>
         </div>
     </header>
 
@@ -44,7 +44,7 @@
                 <span aria-hidden="true">&times;</span>
             </button>
             </div>
-            <div class="modal-body" id="bandcamp-iframe">
+            <div class="modal-body">
                 <div class="toolbar row" role="presentation">
                     <p class="toolbar-spacer">File</p>
                     <p class="toolbar-spacer">Edit</p>
@@ -53,8 +53,7 @@
                     <p class="toolbar-spacer">Tools</p>
                     <p class="toolbar-spacer">Help</p>
                 </div>
-                <iframe style="border: 0; width: 700px; height: 472px;" src="https://bandcamp.com/EmbeddedPlayer/album=3842221575/size=large/bgcol=ffffff/linkcol=f171a2/artwork=small/transparent=true/" seamless><a href="http://floraltattoo.bandcamp.com/album/you-can-never-have-a-long-enough-head-start">You Can Never Have a Long Enough Head Start by Floral Tattoo</a></iframe>        
-            </div>
+                <iframe id="bandcamp-iframe" style="border: 0; height: 472px;" src="https://bandcamp.com/EmbeddedPlayer/album=3842221575/size=large/bgcol=333333/linkcol=fe7eaf/artwork=small/transparent=true/" seamless><a href="http://floraltattoo.bandcamp.com/album/you-can-never-have-a-long-enough-head-start">You Can Never Have a Long Enough Head Start by Floral Tattoo</a></iframe>            </div>
         </div>
         </div>
     </div>
@@ -69,7 +68,7 @@
                 <span aria-hidden="true">&times;</span>
             </button>
             </div>
-            <div class="modal-body" id="bandcamp-iframe">
+            <div class="modal-body">
                 <div class="toolbar row" role="presentation">
                     <p class="toolbar-spacer">File</p>
                     <p class="toolbar-spacer">Edit</p>
@@ -78,9 +77,9 @@
                     <p class="toolbar-spacer">Tools</p>
                     <p class="toolbar-spacer">Help</p>
                 </div>
-                <div>
+                <div class="modal-content-body" id="calendar-body">
                     <p>
-                        we don't play music sry
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo nunc eu efficitur eleifend. Aliquam luctus porttitor sodales. Donec eu nibh et lectus dictum tempor. Curabitur in risus eleifend, blandit orci in, pellentesque nulla. Phasellus varius ligula nisl, id mattis risus sodales suscipit. Nullam nec dictum neque. In nec diam sit amet ante finibus ultrices.
                     </p>
                 </div>
             </div>
@@ -98,7 +97,7 @@
                 <span aria-hidden="true">&times;</span>
             </button>
             </div>
-            <div class="modal-body" id="bandcamp-iframe">
+            <div class="modal-body" id="contact-body">
                 <div class="toolbar row" role="presentation">
                     <p class="toolbar-spacer">File</p>
                     <p class="toolbar-spacer">Edit</p>
@@ -107,7 +106,7 @@
                     <p class="toolbar-spacer">Tools</p>
                     <p class="toolbar-spacer">Help</p>
                 </div>
-                <div>
+                <div class="modal-content-body">
                     <p>
                         1-800-fuck-you.com
                     </p>
@@ -127,7 +126,7 @@
                 <span aria-hidden="true">&times;</span>
             </button>
             </div>
-            <div class="modal-body" id="bandcamp-iframe">
+            <div class="modal-body" id="about-body">
                 <div class="toolbar row" role="presentation">
                     <p class="toolbar-spacer">File</p>
                     <p class="toolbar-spacer">Edit</p>
@@ -136,7 +135,7 @@
                     <p class="toolbar-spacer">Tools</p>
                     <p class="toolbar-spacer">Help</p>
                 </div>
-                <div>
+                <div class="modal-content-body">
                     <p>we r punk</p>
                 </div>
             </div>
