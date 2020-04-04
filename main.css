@@ -144,20 +144,27 @@ span{
 }
 
 @media screen and (max-width: 970px){
+    html{font-size:16px;}
+    body{font-size:62.5%;}
+
     p{
         font-size: 2em !important;
     }
 
     header, nav, .nav-pill{
-        height: 5.25rem;
-        font-size: 1rem;
+        height: 3rem;
+        font-size: 0.75rem;
+    }
+
+    .nav-pill{
+        width: 50%;
     }
 
     #icon-holder, #time{
         display: none;
     }
     #logo-text{
-        font-size: 1rem;
+        font-size: 0.75rem;
     }
     .modal-content{
         width: 160%;
