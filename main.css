@@ -22,6 +22,8 @@ header{
 }
 nav{
     background-color: #1A50B8;
+    display: flex;
+    flex-direction: row;
 }
 .nav-pill{
     color: #EEEEEE;
@@ -99,45 +101,8 @@ span{
     margin-top: 5px;
 }
 
-/* Mobile */
-
-@media screen and (max-width: 1000px){
-    p{
-        font-size: 2em !important;
-    }
-
-    header, nav, .nav-pill{
-        height: 5.25rem;
-        font-size: 1.27rem;
-    }
-
-    #icon-holder, #time{
-        display: none;
-    }
-    #logo-text{
-        font-size: 1.5rem;
-    }
-    .modal-content{
-        width: 160%;
-        margin-left: -10rem;
-    }
-    .modal-header{
-        height: 3rem;
-    }
-    .modal-title{
-        font-size: 2rem !important;
-        margin-top: 5px;
-    }
-    .toolbar{
-        font-size: 0.75rem;
-        height: 35px;
-    }
-    .close{
-        width: 10%;
-        padding: 1.27rem !important;
-        margin-left: -5px;
-        font-size: 3em;
-    }
+#bandcamp-iframe{
+    width: 100%;
 }
 
 @media screen and (max-width: 970px){
@@ -146,17 +111,13 @@ span{
     }
 
     p{
-        font-size: 2em !important;
+        font-size: 1em !important;
     }
 
     header, nav, .nav-pill{
         height: 3rem;
         font-size: 0.67rem;
         width: 100%;
-    }
-    nav{
-        display: flex;
-        flex-direction: row;
     }
 
     #icon-holder, #time{
@@ -166,24 +127,22 @@ span{
         font-size: 0.67rem;
     }
     .modal-content{
-        width: 160%;
-        margin-left: -10rem;
+        width: 100%;
     }
     .modal-header{
-        height: 3rem;
+        height: 2rem;
     }
     .modal-title{
-        font-size: 2rem !important;
+        font-size: 1rem !important;
         margin-top: 5px;
     }
     .toolbar{
         font-size: 0.75rem;
-        height: 35px;
+        height: 20px;
     }
     .close{
-        width: 10%;
-        padding: 1.27rem !important;
+        padding: 1rem !important;
         margin-left: -5px;
-        font-size: 3em;
+        font-size: 2em;
     }
 }
