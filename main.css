@@ -38,11 +38,13 @@ nav{
 #icon-holder{
     width: 8em;
 }
+#time{
+    width: 10%;
+}
 #endcap{
     background-color: #1290E8;
     border-radius: 2.5px;
     padding: 2px;
-    width: 6em;
     color: #EEEEEE;
 }
 .close{
