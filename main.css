@@ -91,15 +91,46 @@ span{
     margin-bottom: 10em; 
     line-height: 0 !important;
 }
-
-
-#bandcamp-iframe{
+.modal-body{
     padding: 0;
 }
+.modal-content-body{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 5px;
+}
+
 /* Mobile */
 
 @media screen and (max-width: 1000px){
     p{
-        font-size: 5em !important;
+        font-size: 2em !important;
+    }
+
+    header, nav, .nav-pill{
+        height: 5rem;
+        font-size: 1.27rem;
+    }
+
+    #icon-holder, #time{
+        display: none;
+    }
+    #logo-text{
+        font-size: 1.5rem;
+    }
+    .modal-content{
+        width: 160%;
+        margin-left: -10rem;
+    }
+    .modal-header{
+        height: 3rem;
+    }
+    .modal-title{
+        font-size: 2rem !important;
+        margin-top: 5px;
+    }
+    .toolbar{
+        font-size: 0.75rem;
+        height: 35px;
     }
 }
