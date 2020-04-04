@@ -1,4 +1,7 @@
 
+html{
+    font-size: 16px;
+}
 #logo-text{
     font-family: 'Roboto', sans-serif;
     color: #EEEEEE;
@@ -108,9 +111,6 @@ span{
 }
 
 @media screen and (max-width: 970px){
-    html{
-        font-size: 16px;
-    }
 
     p{
         font-size: 1em !important;
