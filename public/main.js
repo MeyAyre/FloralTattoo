@@ -9,5 +9,5 @@ $(document).ready(function() {
             $('#endcap').text("06:09");
         }
     }
-    changeOnTime();
+    changeOnTime(); 
 });
