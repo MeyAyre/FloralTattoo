@@ -110,7 +110,7 @@ span{
     }
 
     header, nav, .nav-pill{
-        height: 5rem;
+        height: 5.25rem;
         font-size: 1.27rem;
     }
 
@@ -119,6 +119,45 @@ span{
     }
     #logo-text{
         font-size: 1.5rem;
+    }
+    .modal-content{
+        width: 160%;
+        margin-left: -10rem;
+    }
+    .modal-header{
+        height: 3rem;
+    }
+    .modal-title{
+        font-size: 2rem !important;
+        margin-top: 5px;
+    }
+    .toolbar{
+        font-size: 0.75rem;
+        height: 35px;
+    }
+    .close{
+        width: 10%;
+        padding: 1.27rem !important;
+        margin-left: -5px;
+        font-size: 3em;
+    }
+}
+
+@media screen and (max-width: 970px){
+    p{
+        font-size: 2em !important;
+    }
+
+    header, nav, .nav-pill{
+        height: 5.25rem;
+        font-size: 1rem;
+    }
+
+    #icon-holder, #time{
+        display: none;
+    }
+    #logo-text{
+        font-size: 1rem;
     }
     .modal-content{
         width: 160%;
