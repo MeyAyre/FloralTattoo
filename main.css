@@ -1,9 +1,4 @@
 
-
-header{
-    color: #EEEEEE;
-    text-shadow: 1px 1px #322B2B;
-}
 #logo-text{
     font-family: 'Roboto', sans-serif;
     color: #EEEEEE;
@@ -16,6 +11,8 @@ body{
     /* background-image: url(windows_xp_background.jpg); */
 }
 header{
+    color: #EEEEEE;
+    text-shadow: 1px 1px #322B2B;
     background-color: #307BE5;
     margin: auto;
     bottom: 0 !important;
@@ -144,20 +141,29 @@ span{
 }
 
 @media screen and (max-width: 970px){
+    html{
+        font-size: 16px;
+    }
+
     p{
         font-size: 2em !important;
     }
 
     header, nav, .nav-pill{
-        height: 5.25rem;
-        font-size: 1rem;
+        height: 3rem;
+        font-size: 0.67rem;
+        width: 100%;
+    }
+    nav{
+        display: flex;
+        flex-direction: row;
     }
 
     #icon-holder, #time{
         display: none;
     }
     #logo-text{
-        font-size: 1rem;
+        font-size: 0.67rem;
     }
     .modal-content{
         width: 160%;
