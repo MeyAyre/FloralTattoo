@@ -1,8 +1,6 @@
 
-
-header{
-    color: #EEEEEE;
-    text-shadow: 1px 1px #322B2B;
+html{
+    font-size: 16px;
 }
 #logo-text{
     font-family: 'Roboto', sans-serif;
@@ -16,6 +14,8 @@ body{
     /* background-image: url(windows_xp_background.jpg); */
 }
 header{
+    color: #EEEEEE;
+    text-shadow: 1px 1px #322B2B;
     background-color: #307BE5;
     margin: auto;
     bottom: 0 !important;
@@ -25,6 +25,8 @@ header{
 }
 nav{
     background-color: #1A50B8;
+    display: flex;
+    flex-direction: row;
 }
 .nav-pill{
     color: #EEEEEE;
@@ -38,11 +40,13 @@ nav{
 #icon-holder{
     width: 8em;
 }
+#time{
+    width: 10%;
+}
 #endcap{
     background-color: #1290E8;
     border-radius: 2.5px;
     padding: 2px;
-    width: 6em;
     color: #EEEEEE;
 }
 .close{
@@ -57,6 +61,8 @@ nav{
     font-size: 2rem;
     font-weight: normal;
     padding: 0.80rem !important;
+    padding-right: 1rem !important;
+    padding-bottom: 1rem !important;
 }
 span{
     margin-left: -0.25em;
@@ -91,15 +97,62 @@ span{
     margin-bottom: 10em; 
     line-height: 0 !important;
 }
-
-
-#bandcamp-iframe{
+.modal-body{
     padding: 0;
 }
-/* Mobile */
+.modal-content-body{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 5px;
+}
 
-@media screen and (max-width: 1000px){
+#bandcamp-iframe{
+    width: 100%;
+}
+#album-image{
+    width: 100%;
+    height: 100%;
+}
+#bandcamp-vlc-player{
+    width: 100%;
+}
+
+@media screen and (max-width: 970px){
+
     p{
-        font-size: 5em !important;
+        font-size: 1em !important;
+    }
+
+    header, nav, .nav-pill{
+        height: 3rem;
+        font-size: 0.67rem;
+        width: 100%;
+    }
+
+    #icon-holder, #time{
+        display: none;
+    }
+    #logo-text{
+        font-size: 0.67rem;
+    }
+    .modal-content{
+        width: 100%;
+    }
+    .modal-header{
+        height: 2.5rem;
+    }
+    .modal-title{
+        font-size: 1rem !important;
+        margin-top: 5px;
+    }
+    .toolbar{
+        font-size: 0.75rem;
+        height: 20px;
+    }
+    .close{
+        padding: 1rem !important;
+        font-size: 2em;
+        padding-right: 1rem !important;
+        padding-bottom: 1rem !important;
     }
 }
